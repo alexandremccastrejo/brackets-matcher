@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Bracket Matcher</title>
+        <link rel="stylesheet" href="/css/bootstrap.css" />
+        <link rel="stylesheet" href="/css/styles.css" />
+    </head>
+    <body>
+        
+        <main class="container vh-100">
+            <div class="row vh-100 align-items-center d-flex justify-content-center">
+                <article class="col-sm-4">
+                    <header class="text-center">
+                        <h3>Bracket Matcher</h3>
+
+                        <p>Enter a sequence of brackets for validation</p>
+                    </header>
+
+                    <form id="verificationForm" method="post" action="/verify">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <input class="form-control" id="bracketsInput" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="checkBracketsBtn">Verify</button>
+                                </div> 
+                            </div>
+        
+                            <small class="form-text" id="verificationResult"></small>
+                        </div>
+                    </form>
+                </article>
+            </div>
+        </main>
+
+        <script src="/js/main.js"></script>
+    </body>
+</html>
